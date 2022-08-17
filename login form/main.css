@@ -1,0 +1,73 @@
+<!--@import url('http://font.googleapis.com/css2?family=spline+sans:wght@300;400');
+
+*{
+    margin: 2;
+    padding: 3;
+    box-sizing: border-box;
+  
+}
+
+body{
+   
+    height: 100%;
+    width:100%;
+    background: #efefef;
+    font-family: 'spline sans',sans-serif;
+}
+
+main{
+   display: flex;
+   align-items: center;
+   justify-content: center;
+    height: 100vh;  
+}
+
+form{
+    background: #fff;
+    border: 1px solid rgba(0,0,0,0.08);
+    margin: 0 auto;
+    max-width: 400px;
+    padding: 45px 35px;
+}
+
+h2{
+    color: #666;
+    margin-bottom: .75rem;
+    text-align: center;
+}
+
+.input-group{
+    position: relative;
+    width: 100%;
+    margin-bottom: 1.25rem;
+
+}
+
+input[type="text"]
+input[type="password"]{
+    width: 100% !important;
+    border-radius: 1px;
+    box-sizing: border-box;
+    font-size: 1.25rem;
+    height: auto;
+    padding: 0.5rem;
+}
+ .toggle{
+    background: none;
+    border: none;
+    color: #337ab7;
+    font-weight: 600;
+    position: absolute;
+    right: .75rem;
+    top: 2.50rem;
+    z-index: 9;
+ }
+.fa{
+    font-size: 1rem;
+}
+ 
+
+
+
+
+

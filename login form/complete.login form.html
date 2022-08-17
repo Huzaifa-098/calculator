@@ -1,0 +1,199 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link  rel="preconnect"href="https://fonts.gstatic.com" >
+    <link href="https://getbootstrap.com/docs/5.2/assets/css/docs.css" rel="stylesheet">
+    <title>website</title>
+   <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+
+    <html>
+        <head>
+        <style>
+        body {
+          background-image: url("mainimg.jpeg");
+          background-size: cover;
+          
+        }
+        #hidepassword{
+            display: none;
+        }
+        </style>
+        </head>
+        
+        <body>    
+           
+            <div class="login">
+                <div class="imgcontainer">
+                    <img src="logo.jpeg" alt="Avatar" class="avatar">
+                  </div>  
+                  <h2>Login to continue</h2>  
+                 
+                  <div>
+                
+                    <fieldset><legend>Username</legend><input/></fieldset>
+                    <br>
+                    <fieldset>
+                        <legend>Password</legend>
+                    <div style="display: flex ; justify-content: space-between;">
+                        <input type="password" value="pass" id="myInput" >
+                        <div>
+                        <div id="showpassword"  onclick="myFunction()" >Show</div>
+                        <div id="hidepassword"  onclick="myFunction()" >Hide</div>
+                    </div>
+                    </div>
+                    </fieldset>
+                    
+                    
+                   <br>
+                    <fieldset><legend>Database</legend><input/></fieldset>
+              
+                </div>
+
+                <br><br>  
+                <button class="button">Connect</button>
+            </form>     
+        </div>
+    
+        <script>
+            function myFunction() {
+            var x = document.getElementById("myInput");
+            var hidepass = document.getElementById("hidepassword");
+            var showpass = document.getElementById("showpassword");
+            if (x.type === "password") {
+             x.type = "text";
+             showpass.style.display = "none";
+             hidepass.style.display = "block";
+
+            } else {
+              x.type = "password";
+              
+             showpass.style.display = "block";
+             hidepass.style.display = "none";
+          }
+        }
+        </script>
+
+<style>
+
+        body  
+{  
+    margin: 10px;  
+    padding: 00px;  
+    background-color:#c2c5bdea;  
+    font-family: 'Arial';  
+}  
+
+.login{  
+        width: 360px;  
+        overflow: hidden;  
+        margin: auto;  
+        margin-top: 30px !important;
+        padding: 60px;  
+        background: #1d7a06;  
+        border-radius: 15px ;  
+          
+} 
+.imgcontainer {
+  text-align: center;
+  margin: 14px 0 5px 0;
+} 
+
+/* input{ border: 5px solid; } */
+
+input{
+    background: #1d7a06;
+    border: none;
+    color: white;
+}
+
+input:focus{
+outline: none;
+}
+
+.button {
+    width: 380px;  
+    height: 50px;  
+    border: none;  
+    border-radius: 10px;  
+    padding-left: 8px;  
+    color: #1bbe0c; 
+}  
+
+h2{  
+    text-align: center;  
+    color: white;  
+    padding: 10px;  
+}  
+label{  
+    color: #08ffd1;  
+    font-size: 17px;  
+}  
+
+fieldset{
+    width: 350px;
+    border-radius: 10px;
+    height: 40px;
+    color: white;
+}
+
+
+
+ 
+ legend{
+   width: 70px;
+   padding: 2px;
+   color: white;
+ }
+
+  
+#Uname{  
+    width: 300px;  
+    height: 30px;  
+    border: none;  
+    border-radius: 20px;  
+    padding-left: 8px;  
+}  
+#Pass{  
+    width: 300px;  
+    height: 30px;  
+    border: none;  
+    border-radius: px;  
+    padding-left: 8px;  
+    color: #fff;
+  justify-content:end ;
+   
+   
+      
+}  
+#log{  
+    width: 300px;  
+    height: 30px;  
+    border: none;  
+    border-radius: 17px;  
+    padding-left: 7px;  
+    color: blue;  
+  
+  
+}  
+span{  
+    color: white;  
+    font-size: 17px;  
+}  
+a{  
+    float: right;  
+    background-color: grey;  
+}  
+ </style>       
+</script>
+
+
+    </body>
+    </html>
+    
+
+
+
