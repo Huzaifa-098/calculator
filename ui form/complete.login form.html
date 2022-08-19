@@ -19,53 +19,145 @@
         <body>    
         
             
-            <div class="container-fluid">
+            <div class="container">
                
              
-                  <h2>Login to continue</h2>  
-                 
+                <div class="row">
+                  <div class="col">
+                    1 of 2
+                  </div>
+                  <div class="col">
+                    2 of 2
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col">
+                    1 of 3
+                  </div>
+                  <div class="col">
+                    2 of 3
+                  </div>
+                  <div class="col">
+                    3 of 3
+                  </div>
+                </div>
+              </div>
+                  
+
+
+
+
                   <div class="row">
-                    <div class="col-sm-4">
-                      <div class="well">
-                        <p><fieldset><legend>Business Unit Name</legend><input/></fieldset></p> 
-                         
-                      </div>
+                    <div class="col-12">
+                        <fieldset><legend>Business Unit Name</legend><input/></fieldset> 
                     </div>
-                    <div class="col-sm-4">
-                      <div class="well">
-                        <p><fieldset><legend>Well Location</legend><input/></fieldset></p> 
-                        
-                      </div>
-                    
-                     
-                      
+                    <br>
+                    <br>
+                    <br>
+                    <br>
+                  <div class="row">
+                    <div class="col-3">
+                        <fieldset><legend>Business Unit Name</legend><input/></fieldset> 
+                    </div>
+                    <div class="col-3">
+                        <fieldset><legend>Well Location</legend><input/></fieldset> 
+                    </div> 
+                    <div class="col-3">
                     <fieldset><legend>Case Date</legend><input/></fieldset>
-                    <br>
-                    <fieldset><legend>Land Usage</legend><input/></fieldset>
-                    <br>
-                    <fieldset><legend>Checked By</legend><input/></fieldset>
-                    <br>
-                    <fieldset><legend>Verified By</legend><input/></fieldset>
-                    <br>
-                    <fieldset><legend>Checked in Khi</legend><input/></fieldset>
-                    <br>
+                  </div>
+                    <div class="col-3">
+                    <fieldset><legend>Case Date</legend><input/></fieldset>
+                  </div>
+                  </div>
+
+
+
+
+
+
+
+           <div class="row">
+             <div class="col-3">
+                <fieldset><legend>Land Usage</legend><input/></fieldset>
+              </div>
+           <div class="col-3">
+             <fieldset><legend>Checked By</legend><input/></fieldset>
+             </div>
+           <div class="col-6">
+               <fieldset><legend>Verified By</legend><input/></fieldset>
+        </div>
+      </div>
+        <!-- <div class="col-3">
+             <fieldset><legend>Checked in Khi</legend><input/></fieldset>
+     </div> -->
+
+     
+     <div class="row">
+      <div class="col-3">
+         <fieldset><legend>Lease Remarks</legend><input/></fieldset>
+       </div>
+    <div class="col-3">
+      <fieldset><legend>Tree Remarks</legend><input/></fieldset>
+      </div>
+    <div class="col-3">
+        <fieldset><legend>Reference Lease</legend><input/></fieldset>
+ </div>
+ <div class="col-3">
+      <fieldset><legend>block code</legend><input/></fieldset>
+</div>
+</div>          
+                    
+           <div class="row">  
+              <div class="col-3">
                     <fieldset><legend>Lease Remarks</legend><input/></fieldset>
-                    <br>
+                  </div>
+                    <div class="col-3">
 
                     <fieldset><legend>Tree Remarks</legend><input/></fieldset>
-                   <br>
+                  </div>
+                    <div class="col-6">
                     <fieldset><legend>Reference Lease</legend><input/></fieldset>
-                </div> 
-                <br>
+                  </div>
+                </div>
+
+
+
+                  <div class="row">
+                    <div class="col-3">
+                      One of three columns
+                    </div>
+                    <div class="col-3">
+                      One of three columns
+                    </div>
+                    <div class="col-3">
+                      One of three columns
+                    </div>
+                  </div>
+                
+
+                  <div class="row">
+                    <div class="col">Column</div>
+                    <div class="col">Column</div>
+                    <div class="w-100"></div>
+                    <div class="col">Column</div>
+                    <div class="col">Column</div>
+                  </div>
+
+
+
+
+                  
+
+                   <br>
+                  <!-- <br>
                 <button class="button">Land Owner</button> 
                 <button class="button">Lease Details</Details></button> 
                 <button class="button">Crop Details</button> 
                 <button class="button">Tree Details</button> 
                 <button class="button">MISC.Details</button> 
-                <button class="button">Lease Information</button> 
+                <button class="button">Lease Information</button>  -->
 
             </form>     
-        </div>
     
 
 <style>
@@ -80,14 +172,10 @@
 
 div {
   float: left;
-  padding: 15px; 
+  padding: 25px; 
+  
 }
-.imgcontainer {
-  text-align: center;
-  margin: 14px 0 5px 0;
-} 
 
-/* input{ border: 5px solid; } */
 
 input{
     background: white;
@@ -96,26 +184,20 @@ input{
 }
 
 input:focus{
-outline: none;.
+outline: none;
 }
 
-h2{  
-    text-align: center;  
-    color: white;  
-    padding: 10px;  
-}  
-label{  
-    color: #08ffd1;  
-    font-size: 17px;  
-}  
+ 
+ 
+
 
 fieldset{
-    width: 350px;
+    /* width: 350px; */
     border-radius: 10px;
-    height: 40px;
+    /* height: 40px; */
     color: black;
     cursor: pointer;
-}
+ } 
 
 
 
@@ -125,10 +207,10 @@ fieldset{
    padding: 2px;
    color: black;
  }
-
+/* 
  .button {
-    width: 220px;  
-    height: 78px;  
+     width: 220px;   
+    height: 78px;   
     border: dotted;  
     border-radius: 10px;  
     padding-left: 8px;  
@@ -136,21 +218,12 @@ fieldset{
     color: white;
     cursor: pointer; 
  }
-#Uname{  
-    width: 300px;  
-    height: 30px;  
-    border: none;  
-    border-radius: 20px;  
-    padding-left: 8px;  
-}  
-     
+
+      */
 
  
  
-a{  
-    float: right;  
-    background-color: grey;  
-}  
+
  </style>       
 </script>
 
