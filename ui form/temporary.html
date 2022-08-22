@@ -1,138 +1,313 @@
-<!-- <!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
-  <title>Bootstrap Example</title>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
-  <style>
-    /* Remove the navbar's default margin-bottom and rounded borders */ 
-    .navbar {
-      margin-bottom: 0;
-      border-radius: 0;
-    }
-    
-    /* Add a gray background color and some padding to the footer */
-    footer {
-      background-color: #f2f2f2;
-      padding: 25px;
-    }
-  </style>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+  <title>Document</title>
 </head>
-<body>
+<body class="p-3 m-0 border-0 bd-example">
 
-<nav class="navbar navbar-inverse">
-  <div class="container-fluid">
-    <div class="navbar-header">
-      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>                        
-      </button>
-      <a class="navbar-brand" href="#">Portfolio</a>
-    </div>
-    <div class="collapse navbar-collapse" id="myNavbar">
-      <ul class="nav navbar-nav">
-        <li class="active"><a href="#">Home</a></li>
-        <li><a href="#">About</a></li>
-        <li><a href="#">Gallery</a></li>
-        <li><a href="#">Contact</a></li>
-      </ul>
-      <ul class="nav navbar-nav navbar-right">
-        <li><a href="#"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
-      </ul>
-    </div>
-  </div>
-</nav>
-
-<div class="jumbotron">
-  <div class="container text-center">
-    <div class="row">
-        <div class="col-sm-4">
-          <div class="well">
-            <p><fieldset><legend>Business Unit Name</legend><input/></fieldset></p> 
-             
-          </div>
-        </div>
-        <div class="col-sm-4">
-          <div class="well">
-            <p><fieldset><legend>Well Location</legend><input/></fieldset></p> 
-            
-          </div>
-        
-         
-          
-        <fieldset><legend>Case Date</legend><input/></fieldset>
-        <br>
-        <fieldset><legend>Land Usage</legend><input/></fieldset>
-        <br>
-        <fieldset><legend>Checked By</legend><input/></fieldset>
-        <br>
-        <fieldset><legend>Verified By</legend><input/></fieldset>
-        <br>
-        <fieldset><legend>Checked in Khi</legend><input/></fieldset>
-        <br>
-        <fieldset><legend>Lease Remarks</legend><input/></fieldset>
-        <br>
-
-        <fieldset><legend>Tree Remarks</legend><input/></fieldset>
-       <br>
-        <fieldset><legend>Reference Lease</legend><input/></fieldset>
-    </div> 
-    <br>
-    <button class="button">Land Owner</button> 
-    <button class="button">Lease Details</Details></button> 
-    <button class="button">Crop Details</button> 
-    <button class="button">Tree Details</button> 
-    <button class="button">MISC.Details</button> 
-    <button class="button">Lease Information</button> 
-
-</form>        
    
+    
+  <nav class="navbar navbar-expand-lg navbar-white bg-white">
+    <a class="navbar-brand" href="#">
+      <img src="logo.jpeg" width="50" height="50" alt="">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="http://127.0.0.1:5500/bootstrap/boot.html?">COMPENSATION CASE SYSTEM</a>
+ 
+    
+      
+        <ul class="navbar-nav me-auto mb-1">
+          <li class="nav-item">
+        </ul>
+        <form class="d-flex" role="search">
+          <a class="navbar-brand" href="#"> Setup</a>
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
+              <li class="nav-item active">
+                <a class="nav-link" href="#">checklist</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Transactions</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#"> Reports</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">utilities</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link " href="#">Window</a>
+              </li>    
+        </form>
+      </div>
+    </div>
+  </nav>
+  <div class="container mx-5">
+    <div class="row">
+  <div class="card">
+  <h2>Compensation Case</h2>
+  <div class="col-sm-3">
+    <fieldset style="border:1px solid;"><legend class="helloLeg1">Business unit name</legend><input/></fieldset></div>
+<div class="row">
+<div class="col-sm-3">
+  <fieldset style="border:1px solid;"><legend class="helloLeg">Well location</legend><input/></fieldset></div>
+  <div class="col-sm-3">
+    <div class="Blankbox" style="border:1px solid"><input></div>
   </div>
+  <div class="col-sm-3">
+    <fieldset style="border:1px solid;"><legend class="helloLeg4">Case No</legend><input/></fieldset></div>
+  <div class="col-sm-3">
+    <fieldset style="border:1px solid;"><legend class="helloLeg5">Lease No</legend><input/></fieldset></div>
 </div>
 
-
-
-</body>
-</html> -->
-
-<!doctype html>
-<html lang="en">
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Bootstrap demo</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
-  </head>
-  <body>
-    <h1>Hello, world!</h1>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous"></script>
-  </body>
-</html>
-
-
-
-<div class="container">
-    <div class="row">
-      <div class="col">
-        1 of 2
-      </div>
-      <div class="col">
-        2 of 2
+<div class="row">
+  <div class="col-sm-3">
+    <fieldset style="border:1px solid;"><legend class="helloLeg6">Case Date</legend><input/></fieldset></div>
+    <div class="col-sm-3">
+      <fieldset style="border:1px solid;"><legend class="helloLeg">Block Code</legend><input/></fieldset></div>
+      <div class="col-sm-6">
+        <div class="Blankbox" style="border:1px solid"><input></div>
       </div>
     </div>
-    <div class="row">
-      <div class="col">
-        1 of 3
+      
+   
+<div class="row">
+<div class="col-sm-3">
+  <fieldset style="border:1px solid;"><legend class="helloLeg">Land Usage</legend><input/></fieldset></div>
+  <div class="col-sm-3">
+    <fieldset style="border:1px solid;"><legend class="helloLeg">Case Status</legend><input/></fieldset></div>
+  <div class="col-sm-3">
+    <fieldset style="border:1px solid;"><legend class="helloLeg">Prepared By</legend><input/></fieldset></div>
+  <div class="col-sm-3">
+    <fieldset style="border:1px solid;"><legend class="helloLeg7">Remarks</legend><input/></fieldset></div>
+</div>
+
+<div class="row">
+  <div class="col-sm-3">
+    <fieldset style="border:1px solid;"><legend class="helloLeg">Checked By</legend><input/></fieldset></div>
+    <div class="col-sm-3">
+      <fieldset style="border:1px solid;"><legend class="helloLeg7">Remarks</legend><input/></fieldset></div>
+    <div class="col-sm-3">
+      <fieldset style="border:1px solid;"><legend class="helloLeg">Recieved By</legend><input/></fieldset></div>
+      <div class="col-sm-3">
+        <div class="Blankbox" style="border:1px solid"><input></div>
       </div>
-      <div class="col">
-        2 of 3
-      </div>
-      <div class="col">
-        3 of 3
-      </div>
-    </div>
   </div>
+  
+  <div class="row">
+    <div class="col-sm-3">
+      <fieldset style="border:1px solid;"><legend class="helloLeg">Verified By</legend><input/></fieldset></div>
+      <div class="col-sm-3">
+        <div class="Blankbox" style="border:1px solid"><input></div>
+      </div>
+        <!-- <div class="col-sm-3">       
+  <form>
+    <label class="form-check-label" for="defaultCheck1">Default checkbox</label>
+         <label class="radio-inline"> <input type="radio" name="optradio">yes</label>
+   <label class="radio-inline"><input type="radio" name="optradio">no</label>
+    </form>
+    </div> -->
+    <!-- <div class="col-sm-3">       
+      <form>
+        <label class="form-check-label" for="defaultCheck1">Default checkbox</label>
+             <label class="radio-inline"> <input type="radio" name="optradio">yes</label>
+       <label class="radio-inline"><input type="radio" name="optradio">no</label>
+        </form>
+        </div>-->
+  </div> 
+  <div class="row">
+    <div class="col-sm-3">
+      <fieldset style="border:1px solid;"><legend class="helloLeg8">Checked in Khi</legend><input/></fieldset></div>
+      <div class="col-sm-3">
+        <div class="Blankbox" style="border:1px solid"><input></div>
+      </div>
+        <div class="col-sm-3">
+          <fieldset style="border:1px solid;"><legend class="helloLeg">Approved By</legend><input/></fieldset></div>
+          <div class="col-sm-3">
+            <div class="Blankbox" style="border:1px solid"><input></div>
+          </div>
+  </div>
+
+  <div class="row">
+    <div class="col-sm-6">
+      <fieldset style="border:1px solid;"><legend class="helloLeg2">lease Remarks</legend><input/></fieldset></div>
+      <div class="col-sm-6">
+        <fieldset style="border:1px solid;"><legend class="helloLeg2">Crop Remarks</legend><input/></fieldset></div>
+      </div>
+
+      <div class="row">
+        <div class="col-sm-6">
+          <fieldset style="border:1px solid;"><legend class="helloLeg">Tree Remarks</legend><input/></fieldset></div>
+          <div class="col-sm-6">
+            <fieldset style="border:1px solid;"><legend class="helloLeg2">Misc Remarks</legend><input/></fieldset></div>
+          </div>
+
+          <div class="row">
+            <div class="col-sm-3">
+              <fieldset style="border:1px solid;"><legend class="helloLeg3">Case Date</legend><input/></fieldset></div>
+              <div class="col-sm-3">
+                <div class="Blankbox" style="border:1px solid"><input></div>
+              </div>
+           <div class="col-sm-6">
+                <div class="Blankbox" style="border:1px solid"><input></div>
+              </div>
+
+              <br>
+              <br>
+              <br>
+              <button class="button">Land Owner</button> 
+              <button class="button">Lease Details</Details></button> 
+              <button class="button">Crop Details</button> 
+              <button class="button">Tree Details</button> 
+              <button class="button">MISC.Details</button> 
+              <button class="button">Lease Information</button>
+              <button class="button" hrf="http://127.0.0.1:5000/ui%20form/modal.html" >Submit</button>  
+          </div>
+  </div>
+  </script>
+  <style>
+
+body  {  
+    margin: 10px;  
+    padding: 00px;  
+    background-color:white;  
+}
+
+
+input{
+    background: white;
+    border: none;
+    color: black;
+   
+    
+}
+input:focus{
+outline: none;
+}
+h2{
+  color: #49a851;
+}
+legend {
+ 
+    padding: 0;
+   
+    font-size: 1rem;
+    width: 52px;
+    
+}
+*, ::after, ::before {
+    box-sizing: border-box;
+    /* border: 1px solid black; */
+    border-radius: 7px;
+    /* margin-left: 1px; */
+}
+
+#fieldset{
+      
+    color: black;
+    border-radius: 10px !important;
+    cursor: pointer;
+    border: 1px solid black;
+    border-radius: 10px;
+    
+ } 
+
+ .row {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    margin-right: 0px;
+    margin-left: 0px;
+}
+
+.helloLeg1{
+  padding: 0;
+    font-size: 1rem;
+    width: 139px;
+    margin-left: 5px;
+}
+
+
+.helloLeg2{
+  padding: 2px;
+   color: black;
+   width: 108px;
+   margin-left: 5px;
+}
+
+
+ .helloLeg{
+   width: 100px;
+   padding: 2px;
+   color: black;  
+   margin-left: 5px;
+ }
+
+ .helloLeg3{
+    width: 80px;
+    padding: 2px;
+    color: black;
+    margin-left: 5px;
+}
+.helloLeg4{
+    width: 65px;
+    padding: 2px;
+    color: black;
+}
+.helloLeg5{
+    width: 72px;
+    padding: 2px;
+    color: black;
+    margin-left: 5px;
+}
+.helloLeg6 {
+    width: 75px;
+    padding: 0px;
+    margin-left: 11px;
+    color: black;
+}
+.helloLeg7{
+    width: 66px;
+    padding: 2px;
+    color: black;
+    margin-left: 5px;
+}
+.helloLeg8{
+    width: 112px;
+    padding: 2px;
+    color: black;
+    margin-left: 5px;
+}
+ .Blankbox{
+  margin-top: 12px;
+    padding: 12px;
+}
+ 
+  .button {
+     width: 220px;   
+    height: 78px;   
+    border: dotted;  
+    border-radius: 10px;  
+    padding-left: 8px;  
+    background-color: #1bbe0c; 
+    color: white;
+    cursor: pointer; 
+    margin-top: 3%;
+ } 
+
+
+
+  </style>
+</body>
+</html>
