@@ -1,3 +1,6 @@
+
+
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -6,12 +9,14 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
   <link href="https://getbootstrap.com/docs/5.2/assets/css/docs.css" rel="stylesheet">
-  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
-  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+  <!-- <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script> -->
+  <!-- <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script> -->
+  <!-- <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script> -->
   <title>Document</title>
 </head>
 <body>
+
+  
   
   <nav class="navbar navbar-expand-lg navbar-white bg-white">
     <a class="navbar-brand" href="#">
@@ -25,7 +30,7 @@
           <li class="nav-item">
         </ul>
         <form class="d-flex" role="search">
-          <a class="navbar-brand" href="#"> Setup</a>
+          <a class="navbar-brand" href="https://mercurialminds.com/"> Setup</a>
           <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
           </button>
@@ -44,58 +49,145 @@
                 <a class="nav-link" href="#">utilities</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link " href="#">Window</a>
+                <a class="nav-link " href="https://fakestoreapi.com/docs">Window</a>
               </li>    
         </form>
       </div>
     </div>
   </nav>
-  <div class="card">
-  <h2>Compensation Case</h2>
-  
-  <div class="col-sm-3">
-    <fieldset style="border:1px solid;"><legend class="helloLeg1">Business unit name</legend><input/></fieldset></div>
-<div class="row">
-<div class="col-sm-3">
-  <fieldset style="border:1px solid;"><legend class="helloLeg">Well location</legend><input/></fieldset></div>
-  <div class="col-sm-3">
-    <div class="Blankbox" style="border:1px solid"><input></div>
-  </div>
-  <div class="col-sm-3">
-    <fieldset style="border:1px solid;"><legend class="helloLeg4">Case No</legend><input/></fieldset></div>
-  <div class="col-sm-3">
-    <fieldset style="border:1px solid;"><legend class="helloLeg5">Lease No</legend><input/></fieldset></div>
-</div>
 
-<div class="row">
-  <div class="col-sm-3">
-    <fieldset style="border:1px solid;"><legend class="helloLeg6">Case Date</legend><input/></fieldset></div>
-    <div class="col-sm-3">
-      <fieldset style="border:1px solid;"><legend class="helloLeg">Block Code</legend><input/></fieldset></div>
+  <div class="modal fade" id="exampleModalLong" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle" aria-hidden="true">
+    <!-- Full screen modal -->
+  <div class="modal-dialog">
+  
+      <div class="modal-content">
+        <div class="modal-header">
+          <h1>Land Owner</h1>
+  
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          <table id="customers">
+            <tr>
+              <th>Code</th>
+              <th>Land Owner</th>
+              <th>Owner ststus</th>
+            </tr>
+            <tr>
+              <td>14843</td>
+              <td>Bahadur s/o misri</td>
+              <td>owner</td>
+            </tr>
+            <tr>
+              <td> </td>
+              <td> </td>
+              <td> </td>
+            </tr>
+            <tr>
+              <td></td>
+              <td></td>
+              <td></td>
+            </tr>
+            <tr>
+              <td></td>
+              <td></td>
+              <td></td>
+            </tr>
+            <tr>
+              <td></td>
+              <td></td>
+              <td></td>
+            </tr>
+            <tr>
+              <td></td>
+              <td></td>
+              <td></td>
+            </tr>
+            <tr>
+              <td></td>
+              <td></td>
+              <td></td>
+            </tr>
+            <tr>
+              <td></td>
+              <td></td>
+              <td></td>
+            </tr>
+            <tr>
+              <td></td>
+              <td></td>
+              <td></td>
+            </tr>
+            <tr>
+              <td></td>
+              <td></td>
+              <td></td>
+            </tr>
+          </table>
+        </div>
+       
+       </div>
+       </div>
+       </div>
+
+
+   <form id="frm1" >
+     <div class="card">
+      <h2>Compensation Case</h2>
+  
+      <div class="col-sm-3">
+        <fieldset style="border:1px solid;"><legend class="helloLeg1">Business unit name</legend><input/></fieldset>
+      </div>
+      <div class="row">
+       <div class="col-sm-3">
+       <fieldset style="border:1px solid;"><legend class="helloLeg">Well location</legend><input/></fieldset>
+       </div>
+        <div class="col-sm-3">
+         <div class="Blankbox" style="border:1px solid"><input></div>
+      </div>
+     <div class="col-sm-3">
+       <fieldset style="border:1px solid;"><legend class="helloLeg4">Case No</legend><input/></fieldset></div>
+      <div class="col-sm-3">
+    <fieldset style="border:1px solid;"><legend class="helloLeg5">Lease No</legend><input/></fieldset></div>
+      </div>
+
+      <div class="row">
+        <div class="col-sm-3">
+        <fieldset style="border:1px solid;"><legend class="helloLeg6">Case Date</legend><input/></fieldset>
+       </div>
+       <div class="col-sm-3">
+       <fieldset style="border:1px solid;"><legend class="helloLeg">Block Code</legend><input /></fieldset>
+      </div>
       <div class="col-sm-6">
-        <div class="Blankbox" style="border:1px solid"><input></div>
+      <div class="Blankbox" style="border:1px solid"><input></div>
       </div>
     </div>
       
    
-<div class="row">
-<div class="col-sm-3">
-  <fieldset style="border:1px solid;"><legend class="helloLeg">Land Usage</legend><input/></fieldset></div>
-  <div class="col-sm-3">
-    <fieldset style="border:1px solid;"><legend class="helloLeg">Case Status</legend><input/></fieldset></div>
-  <div class="col-sm-3">
-    <fieldset style="border:1px solid;"><legend class="helloLeg">Prepared By</legend><input/></fieldset></div>
-  <div class="col-sm-3">
-    <fieldset style="border:1px solid;"><legend class="helloLeg7">Remarks</legend><input/></fieldset></div>
-</div>
+       <div class="row">
+        <div class="col-sm-3">
+         <fieldset style="border:1px solid;"><legend class="helloLeg">Land Usage</legend><input/></fieldset>
+        </div>
+         <div class="col-sm-3">
+          <fieldset style="border:1px solid;"><legend class="helloLeg">Case Status</legend><input/></fieldset>
+        </div>
+       <div class="col-sm-3">
+       <fieldset style="border:1px solid;"><legend class="helloLeg">Prepared By</legend><input/></fieldset>
+      </div>
+      <div class="col-sm-3">
+         <fieldset style="border:1px solid;"><legend class="helloLeg7">Remarks</legend><input/></fieldset>
+        </div>
+  </div>
 
-<div class="row">
-  <div class="col-sm-3">
+   <div class="row">
+    <div class="col-sm-3">
     <fieldset style="border:1px solid;"><legend class="helloLeg">Checked By</legend><input/></fieldset></div>
     <div class="col-sm-3">
       <fieldset style="border:1px solid;"><legend class="helloLeg7">Remarks</legend><input/></fieldset></div>
     <div class="col-sm-3">
-      <fieldset style="border:1px solid;"><legend class="helloLeg">Recieved By</legend><input/></fieldset></div>
+      <fieldset style="border:1px solid;"><legend class="helloLeg">Reviewed By</legend><input/></fieldset></div>
       <div class="col-sm-3">
         <div class="Blankbox" style="border:1px solid"><input></div>
       </div>
@@ -107,7 +199,7 @@
       <div class="col-sm-3">
         <div class="Blankbox" style="border:1px solid"><input></div>
       </div>
-        <div class="col-sm-3">       
+        <!-- <div class="col-sm-3">       
   <form>
     <label class="form-check-label" for="defaultCheck1">KARACHI APPROVAL</label>
          <label class="radio-inline"> <input type="radio" name="optradio">yes</label>
@@ -120,7 +212,7 @@
              <label class="radio-inline"> <input type="radio" name="optradio">yes</label>
        <label class="radio-inline"><input type="radio" name="optradio">No</label>
         </form>
-        </div>
+        </div> -->
   </div>
   <div class="row">
     <div class="col-sm-3">
@@ -144,7 +236,7 @@
 
       <div class="row">
         <div class="col-sm-6">
-          <fieldset style="border:1px solid;"><legend class="helloLeg">Tree Remarks</legend><input/></fieldset></div>
+          <fieldset style="border:1px solid;"><legend class="helloLeg">Tree Remarks</legend><input</fieldset></div>
           <div class="col-sm-6">
             <fieldset style="border:1px solid;"><legend class="helloLeg2">Misc Remarks</legend><input/></fieldset></div>
           </div>
@@ -162,14 +254,21 @@
               <br>
               <br>
               <br>
-              <button class="button">Land Owner</button> 
+              <a href="http://127.0.0.1:5000/ui%20form/modal.html">   <button class="button1"  >Land owner</button> </a>  
               <button class="button">Lease Details</Details></button> 
               <button class="button">Crop Details</button> 
               <button class="button">Tree Details</button> 
               <button class="button">MISC.Details</button> 
-              <button class="button">Lease Information</button>
-            <a href="http://127.0.0.1:5000/ui%20form/modal.html">   <button class="button1"  >Submit</button> </a> 
+              <button type="button" onclick="submitButton()" class="button">Submit</button>
+              <button type="" class="btn btn-primary" data-toggle="modal" data-target="#exampleModalLong">
+                Launch  modal
+              </button>
           </div>
+            </form>
+
+             <p id="form_values">These are the values of each element in the form:</p> 
+            <p id="demo"></p>
+     
   </script>
   <style>
 
@@ -179,14 +278,20 @@ body  {
     background-color:grey;  
 }
 
-
+tr:hover {background-color: red;}
 input{
     background: white;
     border: none;
     color: black;
-   
-    
-}
+  }
+  .btn-primary {
+    color: #fff;
+    background-color:  #1bbe0c;
+    border-color: white;
+    border: dotted;
+    width: 15%;
+    margin-top: 3%;
+  }
 input:focus{
 outline: none;
 }
@@ -206,6 +311,11 @@ legend {
     /* border: 1px solid black; */
     border-radius: 7px;
     /* margin-left: 1px; */
+}
+.btn-primary:hover {
+    color: #fff;
+    /* background-color: #0069d9; */
+    /* border-color: #0062cc; */
 }
 
 #fieldset{
@@ -239,6 +349,85 @@ legend {
     white-space: nowrap;
     color: green;
     margin-left: 0%;
+}
+
+
+
+
+
+.modal-backdrop.show {
+    opacity: 0;
+}
+.modal-backdrop {
+     position:relative !important;
+    /* top: 0; */
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 1040;
+    background-color: #000;
+}
+
+#customers {
+  font-family: Arial, Helvetica, sans-serif;
+  border-collapse: collapse;
+  width: 100%;
+}
+
+h1{
+  color: #49a851;
+}
+
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  padding-top: 100px; /* Location of the box */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+.modal-content {
+  background-color: #fefefe;
+  margin: auto;
+  padding: 20px;
+  border: 1px solid #888;
+  width: 161%;
+    margin-top: -10%;
+    margin-left: -25%;
+}
+.close {
+  color: #aaaaaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+.close:hover,
+.close:focus {
+  color: #000;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+#customers td, #customers th {
+  border: 1px solid #ddd;
+  padding: 14px;
+}
+
+#customers tr:nth-child(even){background-color: #f2f2f2;}
+
+#customers tr:hover {background-color: #ddd;}
+
+#customers th {
+  padding-top: 12px;
+  padding-bottom: 12px;
+  text-align: left;
+  background-color:white;
+  color:black;
 }
 
 
@@ -337,9 +526,12 @@ a {
 
 }
 
-.check label {
 
-}
+     
+
+
+
+
 .nav{
 margin-top: 2px;
 }
@@ -348,5 +540,40 @@ margin-top: 2px;
 
 
   </style>
+  <!-- <script src="script.js" ></script> -->
+  <script>
+    // const x = document.forms["frm1"];
+    // let text = "";
+    // for (let i = 0; i < x.length ;i++) {
+    //   text += x.elements[i].value + "<br>";
+    // }
+    // document.getElementById("demo").innerHTML = text;
+
+     function submitButton(){
+      
+        // const x = document.getElementById("frm1")
+        // console.log(x.elements)
+        const onlyInputs = document.querySelectorAll('#frm1 input');
+        
+        onlyInputs.forEach(param => {
+        
+  console.log(param.element)
+  console.log(param.value);
+});
+
+      //  var hidepass = document.getElementById("form_values");
+      //  console.log(hidepass.style.display);
+      //  for (let i = 0; i < hidepass.length ;i++) {
+      //    if(hidepass.style.display == "block"){
+      //      hidepass.style = "display:none"
+      //   }
+      //   else
+      //    {
+      //    hidepass.style = "display:block"
+      //    }
+      //    return false
+      //  }
+    }
+    </script>
 </body>
 </html>

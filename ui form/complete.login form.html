@@ -1,160 +1,565 @@
-  <!doctype html>
+
+
+
+<!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-     <link  rel="preconnect"href="https://fonts.gstatic.com" > 
-    <link href="https://getbootstrap.com/docs/5.2/assets/css/docs.css" rel="stylesheet"> 
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+  <link href="https://getbootstrap.com/docs/5.2/assets/css/docs.css" rel="stylesheet">
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+  <title>Document</title>
+</head>
+<body>
+
   
-    <title>website</title>
-   <link rel="stylesheet" href="style.css">
-  </head>
-  <body>
-
-    <html>
-        
-        
-        <body>    
-        
-    
-
-   <div class="row">
-   <div class="col-sm-12">
- <fieldset><legend>Business Unit Name</legend><input/></fieldset> 
-                    </div>
-                    <br>
-                    <br>
-                    <br>
-                    <br>
- <div class="row">
-  <div class="col-sm-3">     
- <fieldset><legend>Business Unit Name</legend><input/></fieldset> 
-<fieldset><legend>Well Location</legend><input/></fieldset></div> 
-<div class="col-sm-3">                 
-<fieldset><legend>Case Date</legend><input/></fieldset></div>
+  
+  <nav class="navbar navbar-expand-lg navbar-white bg-white">
+    <a class="navbar-brand" href="#">
+      <img src="logo.jpeg" width="50" height="50" alt="">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="http://127.0.0.1:5500/bootstrap/boot.html?">COMPENSATION CASE SYSTEM</a>
  
-  <fieldset class="div1 col-lg-3"><legend>Case Date</legend><input/></fieldset>
-    </div>
-
-
-    <div class="row">
-      <div class="col-sm-3" ><fieldset ><legend>Well Location</legend><input/></fieldset></div>
-      <div class="col-sm-3" ><input type="text"  id="fname"  ></div>
-      <div class="col-sm-3" ><fieldset ><legend>Case No</legend><input/></fieldset></div>
-      <div class="col-sm-3" ><fieldset ><legend>Lease No</legend><input/></fieldset></div>
-    </div>
-
-
-
-
-           <div class="row">
-             <div class="col-lg-3">
-                <fieldset class="div1"><legend>Land Usage</legend><input/></fieldset>
-              </div>
-           <div class="col-lg-3">
-             <fieldset class="div1"><legend>Checked By</legend><input/></fieldset>
-             </div>
-           <div class="col-6">
-               <fieldset class="div1"><legend>Verified By</legend><input/></fieldset>
-        </div>
-      </div>
-       
-     
-     <div class="row">
-      <div class="col-lg-3">
-         <fieldset class="div1"><legend>Lease Remarks</legend><input/></fieldset>
-       </div>
-    <div class="col-lg-3">
-      <fieldset class="div1"><legend>Tree Remarks</legend><input/></fieldset>
-      </div>
-    <div class="col-lg-3">
-        <fieldset class="div1"><legend>Reference Lease</legend><input/></fieldset>
- </div>
- <div class="col-lg-3">
-      <fieldset class="div1"><legend>block code</legend><input/></fieldset>
-</div>
-</div>          
-                    
-           <div class="row">  
-              <div class="col-sm">
-                    <fieldset class="div1"><legend>Lease Remarks</legend><input/></fieldset>
-                  </div>
-                    <div class="col-lg-3">
-
-                    <fieldset class="div1"><legend>Tree Remarks</legend><input/></fieldset>
-                  </div>
-                    <div class="col-6">
-                    <fieldset class="div1"><legend>Reference Lease</legend><input/></fieldset>
-                  </div>
-                </div>
-
-                <div class="row">
-                  <div class="col-sm-3" ><fieldset ><legend>Checked In Khi</legend><input/></fieldset></div>
-                  <div class="col-sm-3" ><input type="text"  id="fname"  ></div>
-                  <div class="col-sm-3" ><fieldset ><legend>Approved By</legend><input/></fieldset></div>
-                  <div class="col-sm-3" ><input type="text"  id="fname"  ></div>
-                </div>
-
-                  
-          
-
-                   <br>
-                  <br>
-                <button class="button">Land Owner</button> 
-                <button class="button">Lease Details</Details></button> 
-                <button class="button">Crop Details</button> 
-                <button class="button">Tree Details</button> 
-                <button class="button">MISC.Details</button> 
-                <button class="button">Lease Information</button> 
-
-            </form>     
     
+      
+        <ul class="navbar-nav me-auto mb-1">
+          <li class="nav-item">
+        </ul>
+        <form class="d-flex" role="search">
+          <a class="navbar-brand" href="https://mercurialminds.com/"> Setup</a>
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
+              <li class="nav-item active">
+                <a class="nav-link" href="#">checklist</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Transactions</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#"> Reports</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">utilities</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link " href="https://fakestoreapi.com/docs">Window</a>
+              </li>    
+        </form>
+      </div>
+    </div>
+  </nav>
 
-<style>
+  <div class="modal fade" id="exampleModalLong" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle" aria-hidden="true">
+    <!-- Full screen modal -->
+  <div class="modal-dialog">
+  
+      <div class="modal-content">
+        <div class="modal-header">
+          <h1>Land Owner</h1>
+  
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          <table id="customers">
+            <tr>
+              <th>Code</th>
+              <th>Land Owner</th>
+              <th>Owner ststus</th>
+            </tr>
+            <tr>
+              <td>14843</td>
+              <td>Bahadur s/o misri</td>
+              <td>owner</td>
+            </tr>
+            <tr>
+              <td> </td>
+              <td> </td>
+              <td> </td>
+            </tr>
+            <tr>
+              <td></td>
+              <td></td>
+              <td></td>
+            </tr>
+            <tr>
+              <td></td>
+              <td></td>
+              <td></td>
+            </tr>
+            <tr>
+              <td></td>
+              <td></td>
+              <td></td>
+            </tr>
+            <tr>
+              <td></td>
+              <td></td>
+              <td></td>
+            </tr>
+            <tr>
+              <td></td>
+              <td></td>
+              <td></td>
+            </tr>
+            <tr>
+              <td></td>
+              <td></td>
+              <td></td>
+            </tr>
+            <tr>
+              <td></td>
+              <td></td>
+              <td></td>
+            </tr>
+            <tr>
+              <td></td>
+              <td></td>
+              <td></td>
+            </tr>
+          </table>
+        </div>
+       
+      </div>
+    </div>
+  </div>
 
-        body  {  
+  <div class="card">
+  <h2>Compensation Case</h2>
+  
+  <div class="col-sm-3">
+    <fieldset style="border:1px solid;"><legend class="helloLeg1">Business unit name</legend><input/></fieldset></div>
+<div class="row">
+<div class="col-sm-3">
+  <fieldset style="border:1px solid;"><legend class="helloLeg">Well location</legend><input/></fieldset></div>
+  <div class="col-sm-3">
+    <div class="Blankbox" style="border:1px solid"><input></div>
+  </div>
+  <div class="col-sm-3">
+    <fieldset style="border:1px solid;"><legend class="helloLeg4">Case No</legend><input/></fieldset></div>
+  <div class="col-sm-3">
+    <fieldset style="border:1px solid;"><legend class="helloLeg5">Lease No</legend><input/></fieldset></div>
+</div>
+
+<div class="row">
+  <div class="col-sm-3">
+    <fieldset style="border:1px solid;"><legend class="helloLeg6">Case Date</legend><input/></fieldset></div>
+    <div class="col-sm-3">
+      <fieldset style="border:1px solid;"><legend class="helloLeg">Block Code</legend><input/></fieldset></div>
+      <div class="col-sm-6">
+        <div class="Blankbox" style="border:1px solid"><input></div>
+      </div>
+    </div>
+      
+   
+<div class="row">
+<div class="col-sm-3">
+  <fieldset style="border:1px solid;"><legend class="helloLeg">Land Usage</legend><input/></fieldset></div>
+  <div class="col-sm-3">
+    <fieldset style="border:1px solid;"><legend class="helloLeg">Case Status</legend><input/></fieldset></div>
+  <div class="col-sm-3">
+    <fieldset style="border:1px solid;"><legend class="helloLeg">Prepared By</legend><input/></fieldset></div>
+  <div class="col-sm-3">
+    <fieldset style="border:1px solid;"><legend class="helloLeg7">Remarks</legend><input/></fieldset></div>
+</div>
+
+<div class="row">
+  <div class="col-sm-3">
+    <fieldset style="border:1px solid;"><legend class="helloLeg">Checked By</legend><input/></fieldset></div>
+    <div class="col-sm-3">
+      <fieldset style="border:1px solid;"><legend class="helloLeg7">Remarks</legend><input/></fieldset></div>
+    <div class="col-sm-3">
+      <fieldset style="border:1px solid;"><legend class="helloLeg">Recieved By</legend><input/></fieldset></div>
+      <div class="col-sm-3">
+        <div class="Blankbox" style="border:1px solid"><input></div>
+      </div>
+  </div>
+  
+  <div class="row">
+    <div class="col-sm-3">
+      <fieldset style="border:1px solid;"><legend class="helloLeg">Verified By</legend><input/></fieldset></div>
+      <div class="col-sm-3">
+        <div class="Blankbox" style="border:1px solid"><input></div>
+      </div>
+        <div class="col-sm-3">       
+  <form>
+    <label class="form-check-label" for="defaultCheck1">KARACHI APPROVAL</label>
+         <label class="radio-inline"> <input type="radio" name="optradio">yes</label>
+   <label class="radio-inline"><input type="radio" name="optradio">No</label>
+    </form>
+    </div>
+    <div class="col-sm-3">       
+      <form>
+        <label class="form-check-label" for="defaultCheck1">FIELD APPROVAL</label>
+             <label class="radio-inline"> <input type="radio" name="optradio">yes</label>
+       <label class="radio-inline"><input type="radio" name="optradio">No</label>
+        </form>
+        </div>
+  </div>
+  <div class="row">
+    <div class="col-sm-3">
+      <fieldset style="border:1px solid;"><legend class="helloLeg8">Checked in Khi</legend><input/></fieldset></div>
+      <div class="col-sm-3">
+        <div class="Blankbox" style="border:1px solid"><input></div>
+      </div>
+        <div class="col-sm-3">
+          <fieldset style="border:1px solid;"><legend class="helloLeg">Approved By</legend><input/></fieldset></div>
+          <div class="col-sm-3">
+            <div class="Blankbox" style="border:1px solid"><input></div>
+          </div>
+  </div>
+
+  <div class="row">
+    <div class="col-sm-6">
+      <fieldset style="border:1px solid;"><legend class="helloLeg2">lease Remarks</legend><input/></fieldset></div>
+      <div class="col-sm-6">
+        <fieldset style="border:1px solid;"><legend class="helloLeg2">Crop Remarks</legend><input/></fieldset></div>
+      </div>
+
+      <div class="row">
+        <div class="col-sm-6">
+          <fieldset style="border:1px solid;"><legend class="helloLeg">Tree Remarks</legend><input/></fieldset></div>
+          <div class="col-sm-6">
+            <fieldset style="border:1px solid;"><legend class="helloLeg2">Misc Remarks</legend><input/></fieldset></div>
+          </div>
+
+          <div class="row">
+            <div class="col-sm-3">
+              <fieldset style="border:1px solid;"><legend class="helloLeg3">Case Date</legend><input/></fieldset></div>
+              <div class="col-sm-3">
+                <div class="Blankbox" style="border:1px solid"><input></div>
+              </div>
+           <div class="col-sm-6">
+                <div class="Blankbox" style="border:1px solid"><input></div>
+              </div>
+
+              <br>
+              <br>
+              <br>
+              <a href="http://127.0.0.1:5000/ui%20form/modal.html">   <button class="button1"  >Land owner</button> </a>  
+              <button class="button">Lease Details</Details></button> 
+              <button class="button">Crop Details</button> 
+              <button class="button">Tree Details</button> 
+              <button class="button">MISC.Details</button> 
+              <button class="button">Lease Information</button>
+              <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModalLong">
+                Launch  modal
+              </button>
+            
+      
+            
+
+
+            
+          <!-- <div class="modal-content">
+            <span class="close">&times;</span>
+            <h1>Land Owner</h1>
+            <form class="d-flex" role="search">
+              <button class="btn btn-outline-success" type="submit">Search</button>
+              <input class="form-control me-2" type="search" placeholder="" aria-label="Search">
+        </form>
+        
+        <table id="customers">
+          <tr>
+            <th>Code</th>
+            <th>Land Owner</th>
+            <th>Owner ststus</th>
+          </tr>
+          <tr>
+            <td>14843</td>
+            <td>Bahadur s/o misri</td>
+            <td>owner</td>
+          </tr>
+          <tr>
+            <td> </td>
+            <td> </td>
+            <td> </td>
+          </tr>
+          <tr>
+            <td></td>
+            <td></td>
+            <td></td>
+          </tr>
+          <tr>
+            <td></td>
+            <td></td>
+            <td></td>
+          </tr>
+          <tr>
+            <td></td>
+            <td></td>
+            <td></td>
+          </tr>
+          <tr>
+            <td></td>
+            <td></td>
+            <td></td>
+          </tr>
+          <tr>
+            <td></td>
+            <td></td>
+            <td></td>
+          </tr>
+          <tr>
+            <td></td>
+            <td></td>
+            <td></td>
+          </tr>
+          <tr>
+            <td></td>
+            <td></td>
+            <td></td>
+          </tr>
+          <tr>
+            <td></td>
+            <td></td>
+            <td></td>
+          </tr>
+        </table>
+          </div> -->
+        </div>
+        </div>
+  </script>
+  <style>
+
+body  {  
     margin: 10px;  
     padding: 00px;  
-    background-color:white;  
-     
-}  
+    background-color:grey;  
+}
 
- 
-
-
+tr:hover {background-color: red;}
 input{
     background: white;
     border: none;
     color: black;
-}
-
+  }
+  .btn-primary {
+    color: #fff;
+    background-color:  #1bbe0c;
+    border-color: white;
+    border: dotted;
+    width: 15%;
+    margin-top: 3%;
+  }
 input:focus{
 outline: none;
 }
-
+h2{
+  color: #49a851;
+}
+legend {
  
- 
-
-
-fieldset{
-     width: 350px; 
-    border-radius: 10px;
-    /* height: 40px; */
-    color: black;
-    cursor: pointer;
- } 
-
-
-
- 
- legend{
+    padding: 0;
    
-   padding: 2px;
+    font-size: 1rem;
+    width: 52px;
+    
+}
+*, ::after, ::before {
+    box-sizing: border-box;
+    /* border: 1px solid black; */
+    border-radius: 7px;
+    /* margin-left: 1px; */
+}
+.btn-primary:hover {
+    color: #fff;
+    /* background-color: #0069d9; */
+    /* border-color: #0062cc; */
+}
+
+#fieldset{
+      
+    color: black;
+    border-radius: 10px !important;
+    cursor: pointer;
+    border: 1px solid black;
+    border-radius: 10px;
+    
+ } 
+.card{
+  margin-top: 8px;
+}
+ .row {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    margin-right: 0px;
+    margin-left: 0px;
+}
+.navbar-brand {
+    display: inline-block;
+    padding-top: 0.3125rem;
+    padding-bottom: 0.3125rem;
+    margin-right: 1rem;
+    font-size: 1.25rem;
+    line-height: inherit;
+    white-space: nowrap;
+    color: green;
+    margin-left: 0%;
+}
+
+
+
+
+
+.modal-backdrop.show {
+    opacity: 0;
+}
+.modal-backdrop {
+     position:relative !important;
+    /* top: 0; */
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 1040;
+    background-color: #000;
+}
+
+#customers {
+  font-family: Arial, Helvetica, sans-serif;
+  border-collapse: collapse;
+  width: 100%;
+}
+
+h1{
+  color: #49a851;
+}
+
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  padding-top: 100px; /* Location of the box */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+.modal-content {
+  background-color: #fefefe;
+  margin: auto;
+  padding: 20px;
+  border: 1px solid #888;
+  width: 161%;
+    margin-top: -10%;
+    margin-left: -25%;
+}
+.close {
+  color: #aaaaaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+.close:hover,
+.close:focus {
+  color: #000;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+#customers td, #customers th {
+  border: 1px solid #ddd;
+  padding: 14px;
+}
+
+#customers tr:nth-child(even){background-color: #f2f2f2;}
+
+#customers tr:hover {background-color: #ddd;}
+
+#customers th {
+  padding-top: 12px;
+  padding-bottom: 12px;
+  text-align: left;
+  background-color:white;
+  color:black;
+}
+
+
+
+a {
+    color: darkgreen;
+    /* text-decoration: none; */
+    background-color: transparent;
+    -webkit-text-decoration-skip: objects;
+}
+
+.helloLeg1{
+  padding: 0;
+    font-size: 1rem;
+    width: 139px;
+    margin-left: 5px;
+}
+
+
+.helloLeg2{
+  padding: 2px;
    color: black;
+   width: 108px;
+   margin-left: 5px;
+}
+
+
+ .helloLeg{
+   width: 100px;
+   padding: 2px;
+   color: black;  
+   margin-left: 5px;
  }
 
+ .helloLeg3{
+    width: 80px;
+    padding: 2px;
+    color: black;
+    margin-left: 5px;
+}
+.helloLeg4{
+    width: 65px;
+    padding: 2px;
+    color: black;
+}
+.helloLeg5{
+    width: 72px;
+    padding: 2px;
+    color: black;
+    margin-left: 5px;
+}
+.helloLeg6 {
+    width: 75px;
+    padding: 0px;
+    margin-left: 11px;
+    color: black;
+}
+.helloLeg7{
+    width: 66px;
+    padding: 2px;
+    color: black;
+    margin-left: 5px;
+}
+.helloLeg8{
+    width: 112px;
+    padding: 2px;
+    color: black;
+    margin-left: 5px;
+}
+ .Blankbox{
+  margin-top: 12px;
+    padding: 12px;
+}
+ 
   .button {
      width: 220px;   
     height: 78px;   
@@ -164,24 +569,35 @@ fieldset{
     background-color: #1bbe0c; 
     color: white;
     cursor: pointer; 
- }
+    margin-top: 3%;
+ } 
+.button1{
+  width: 220px;   
+    height: 78px;   
+    border: dotted;  
+    border-radius: 10px;  
+    padding-left: 8px;  
+    background-color: #1bbe0c; 
+    color: white;
+    cursor: pointer; 
+    margin-top: 21%;
 
-      
-
- 
- 
-
- </style>       
-</script>
-
-
-    </body>
-    </html>
-    
-
-
- 
+}
 
 
+     
 
 
+
+
+.nav{
+margin-top: 2px;
+}
+
+
+
+
+  </style>
+  
+</body>
+</html>

@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+    <h1> Fetch Api</h1>
+    <form class="form" id="myForm">
+    <lable for="inp_username">Username</lable>
+    <input type="text" name="inp_username" id="inp_username">
+    <lable for="inp_username">Password</lable>
+    <input type="password" name="inp_username" id="inp_username">
+    <button type="submit">Login</button>
+    </form>
+
+<script>
+
+const myForm = document.getElementById('myForm');
+
+myForm.addEventListener('submit', function(e) {
+    e.preventDefault();
+ 
+    const formData = new FormData(this);
+
+    fetch('login.php' , {
+        method: 'post',
+        body: formData
+    }).then(function(response) {
+        return response.text();
+}).then(function (text)  {
+    console.log(text);
+}).catch(function(error) {
+    console.error(error);
+})
+
+});
+
+</script>
+
+    </form>
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <!-- <div class="container">
+        <div>
+            <input type="text" id="input-get" placeholder="Get Value">
+            <button id="btn-get">Get</button>
+        </div>
+        <div id="result">
+            Result
+        </div>
+        <!-- <div>
+        <input type="text" id="input-set" placeholder="Set Value">
+        <button id="btn-set">Set</button>
+    </div> --> 
+
+
+
+
+
+
+
+
+
+
+
+    
+    <script src="script.js"></script>
+</body>
+</html>
