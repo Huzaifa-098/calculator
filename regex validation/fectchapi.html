@@ -133,122 +133,125 @@
        </div>
 
 
-   <form id="frm1" >
+   <form id="form" method="post" name="form">
      <div class="card">
       <h2>Compensation Case</h2>
   
       <div class="col-sm-3">
-        <fieldset style="border:1px solid;"><legend class="helloLeg1">Business unit name</legend><input /></fieldset>
-      </div>
-      <div class="row">
-       <div class="col-sm-3">
-       <fieldset style="border:1px solid;"><legend class="helloLeg">Well location</legend><input/></fieldset>
-       </div>
-        <div class="col-sm-3">
-         <div class="Blankbox" style="border:1px solid"><input></div>
-      </div>
+        <br>
+        <fieldset style="border:1px solid;"><legend class="helloLeg1">Business unit name</legend><input class="add_input" id="BusinessName" /></fieldset>
+        <br></div>
+        <div class="row">
+          <div class="col-sm-3">
+          <fieldset style="border:1px solid;"><legend class="helloLeg">Well location</legend><input class="add_input" id="WellLocation"/></fieldset>
+          </div>
+          <br>
+           <div class="col-sm-3">
+            <div class="Blankbox" style="border:1px solid"><input class="add_input" id="Blankbox"></div>
+         </div>
      <div class="col-sm-3">
-       <fieldset style="border:1px solid;"><legend class="helloLeg4">Case No</legend><input/></fieldset></div>
+       <fieldset style="border:1px solid;"><legend class="helloLeg4">Case No</legend><input class="add_input" id="CaseNo"/></fieldset></div>
       <div class="col-sm-3">
-    <fieldset style="border:1px solid;"><legend class="helloLeg5">Lease No</legend><input/></fieldset></div>
+    <fieldset style="border:1px solid;"><legend class="helloLeg5">Lease No</legend><input class="add_input" id="LeaseNo"/></fieldset></div>
       </div>
 
       <div class="row">
         <div class="col-sm-3">
-        <fieldset style="border:1px solid;"><legend class="helloLeg6">Case Date</legend><input  type="date" id="d1" name="d1"/></fieldset>
+        <fieldset style="border:1px solid;"><legend class="helloLeg6">Case Date</legend><input  type="date" id1="d1" name="d1" class="add_input" id="CaseDate"/></fieldset>
        </div>
        <div class="col-sm-3">
-       <fieldset style="border:1px solid;"><legend class="helloLeg">Block Code</legend><input /></fieldset>
+       <fieldset style="border:1px solid;"><legend class="helloLeg">Block Code</legend><input class="add_input" id="BlockCode" /></fieldset>
       </div>
       <div class="col-sm-6">
-      <div class="Blankbox" style="border:1px solid"><input></div>
+      <div class="Blankbox" style="border:1px solid"><input class="add_input" id="Blankbox1"></div>
       </div>
     </div>
       
    
        <div class="row">
         <div class="col-sm-3">
-         <fieldset style="border:1px solid;"><legend class="helloLeg">Land Usage</legend><input/></fieldset>
+         <fieldset style="border:1px solid;"><legend class="helloLeg">Land Usage</legend><input class="add_input" id="LandUsage"/></fieldset>
         </div>
          <div class="col-sm-3">
-          <fieldset style="border:1px solid;"><legend class="helloLeg">Case Status</legend><input/></fieldset>
+          <fieldset style="border:1px solid;"><legend class="helloLeg">Case Status</legend><input class="add_input" id="CaseStatus"/></fieldset>
         </div>
        <div class="col-sm-3">
-       <fieldset style="border:1px solid;"><legend class="helloLeg">Prepared By</legend><input/></fieldset>
+       <fieldset style="border:1px solid;"><legend class="helloLeg">Prepared By</legend><input class="add_input" id="preparedBy"/></fieldset>
       </div>
       <div class="col-sm-3">
-         <fieldset style="border:1px solid;"><legend class="helloLeg7">Remarks</legend><input/></fieldset>
+         <fieldset style="border:1px solid;"><legend class="helloLeg7">Remarks</legend><input class="add_input" id="BlankBox"/></fieldset>
         </div>
   </div>
 
    <div class="row">
     <div class="col-sm-3">
-    <fieldset style="border:1px solid;"><legend class="helloLeg">Checked By</legend><input/></fieldset></div>
+    <fieldset style="border:1px solid;"><legend class="helloLeg">Checked By</legend><input class="add_input" id="CheckedBy" /></fieldset></div>
     <div class="col-sm-3">
-      <fieldset style="border:1px solid;"><legend class="helloLeg7">Remarks</legend><input/></fieldset></div>
+      <fieldset style="border:1px solid;"><legend class="helloLeg7">Remarks</legend><input class="add_input" id="Remarks" /></fieldset></div>
     <div class="col-sm-3">
-      <fieldset style="border:1px solid;"><legend class="helloLeg">Reviewed By</legend><input/></fieldset></div>
+      <fieldset style="border:1px solid;"><legend class="helloLeg">Reviewed By</legend><input class="add_input" id="ReviewedBy" /></fieldset></div>
       <div class="col-sm-3">
-        <div class="Blankbox" style="border:1px solid"><input></div>
+        <div class="Blankbox" style="border:1px solid"><input class="add_input" id="Blankbox2"></div>
       </div>
   </div>
   
   <div class="row">
     <div class="col-sm-3">
-      <fieldset style="border:1px solid;"><legend class="helloLeg">Verified By</legend><input/></fieldset></div>
+      <fieldset style="border:1px solid;"><legend class="helloLeg">Verified By</legend><input class="add_input" id="VerifiedBy" /></fieldset></div>
       <div class="col-sm-3">
-        <div class="Blankbox" style="border:1px solid"><input></div>
+        <div class="Blankbox" style="border:1px solid"><input class="add_input" id="Blankbox3"></div>
       </div>
-        <!-- <div class="col-sm-3">       
-  <form>
+         <div class="col-sm-3">       
+
     <label class="form-check-label" for="defaultCheck1">KARACHI APPROVAL</label>
-         <label class="radio-inline"> <input type="radio" name="optradio">yes</label>
-   <label class="radio-inline"><input type="radio" name="optradio">No</label>
-    </form>
+         <label class="radio-inline">yes</label>
+         <input type="radio" name="karachiApproval" id1="karachiApproval" value="yes" class="add_input" id="Approval">
+         <label class="radio-inline">No</label>
+         <input type="radio" name="karachiApproval" id1="karachiApproval" value="no" class="add_input" id="KarachiApproval">
     </div>
-    <div class="col-sm-3">       
-      <form>
+    <div class="col-sm-3">    
         <label class="form-check-label" for="defaultCheck1">FIELD APPROVAL</label>
-             <label class="radio-inline"> <input type="radio" name="optradio">yes</label>
-       <label class="radio-inline"><input type="radio" name="optradio">No</label>
-        </form>
-        </div> -->
+             <label class="radio-inline">yes</label>
+             <input type="radio" name="FieldApproval" id1="FieldApproval" value="yes" class="add_input" id="Approval">
+       <label class="radio-inline">No</label>
+       <input type="radio" name="FieldApproval" id1="FieldApproval" value="no" class="add_input" id="KarachiApproval">
+        </div> 
   </div>
   <div class="row">
     <div class="col-sm-3">
-      <fieldset style="border:1px solid;"><legend class="helloLeg8">Checked in Khi</legend><input/></fieldset></div>
+      <fieldset style="border:1px solid;"><legend class="helloLeg8">Checked in Khi</legend><input class="add_input" id="CheckedInKhi" /></fieldset></div>
       <div class="col-sm-3">
-        <div class="Blankbox" style="border:1px solid"><input></div>
+        <div class="Blankbox" style="border:1px solid"><input class="add_input" id="Blankbox4"></div>
       </div>
         <div class="col-sm-3">
-          <fieldset style="border:1px solid;"><legend class="helloLeg">Approved By</legend><input/></fieldset></div>
+          <fieldset style="border:1px solid;"><legend class="helloLeg">Approved By</legend><input class="add_input" id="ApprovedBy"/></fieldset></div>
           <div class="col-sm-3">
-            <div class="Blankbox" style="border:1px solid"><input></div>
+            <div class="Blankbox" style="border:1px solid"><input class="add_input" id="Blankbox5"></div>
           </div>
   </div>
 
   <div class="row">
     <div class="col-sm-6">
-      <fieldset style="border:1px solid;"><legend class="helloLeg2">lease Remarks</legend><input/></fieldset></div>
+      <fieldset style="border:1px solid;"><legend class="helloLeg2">Lease Remarks</legend><input class="add_input" id="LeaseRemarks"/></fieldset></div>
       <div class="col-sm-6">
-        <fieldset style="border:1px solid;"><legend class="helloLeg2">Crop Remarks</legend><input/></fieldset></div>
+        <fieldset style="border:1px solid;"><legend class="helloLeg2">Crop Remarks</legend><input class="add_input" id="CropRemarks"/></fieldset></div>
       </div>
 
       <div class="row">
         <div class="col-sm-6">
-          <fieldset style="border:1px solid;"><legend class="helloLeg9">Tree Remarks</legend><input></fieldset></div>
+          <fieldset style="border:1px solid;"><legend class="helloLeg9">Tree Remarks</legend><input class="add_input" id="TreeRemarks"/></fieldset></div>
           <div class="col-sm-6">
-            <fieldset style="border:1px solid;"><legend class="helloLeg2">Misc Remarks</legend><input/></fieldset></div>
+            <fieldset style="border:1px solid;"><legend class="helloLeg2">Misc Remarks</legend><input class="add_input" id="MiscRemarks"/></fieldset></div>
           </div>
 
           <div class="row">
             <div class="col-sm-3">
-              <fieldset style="border:1px solid;"><legend class="helloLeg3">Case Date</legend><input type="date" id="d1" name="d1"/></fieldset></div>
+              <fieldset style="border:1px solid;"><legend class="helloLeg3">Case Date</legend><input type="date" id1="d1" name="d1" class="add_input" id="CaseDate1" /></fieldset></div>
               <div class="col-sm-3">
-                <div class="Blankbox" style="border:1px solid"><input ></div>
+                <div class="Blankbox" style="border:1px solid"><input class="add_input" id="Blankbox6" ></div>
               </div>
            <div class="col-sm-6">
-                <div class="Blankbox" style="border:1px solid"><input></div>
+                <div class="Blankbox" style="border:1px solid"><input class="add_input" id="Blankbox7"></div>
               </div>
 
               <br>
@@ -259,7 +262,8 @@
               <button class="button">Crop Details</button> 
               <button class="button">Tree Details</button> 
               <button class="button">MISC.Details</button> 
-              <button type="button" onclick="submitButton()" class="button">Submit</button>
+              <button  class="button" id="add_btn2" onclick = "New(event)">Submit</button>
+  </form>
               <button type="" class="btn btn-primary" data-toggle="modal" data-target="#exampleModalLong">
                 Launch  modal
               </button>
@@ -549,72 +553,109 @@ margin-top: 2px;
   </style>
   <!-- <script src="script.js" ></script> -->
   <script>
-   
-    let arr = ["BusineesUnitName","Welllocation","Welllocation2","CaseNo","LeaseNo","CaseDate","BlockCode","BlockCode2","LandUsage","CaseStatus","PreparedBy","Remarks","CheckedBy","Remarks","ReviewedBy","ReviewedBy2","VerifiedBy","VerifiedBy2","CheckedinKhi","CheckedinKhi2","ApprovedBy","ApprovedBy2","leaseRemarks","CropRemarks","TreeRemarks","MiscRemarks","CaseDate","CaseDate2","CaseDate3"]
-    let formArray = []
+    function New(e) {
+	  e.preventDefault() 
+      
+      var a = document.getElementById("BusinessName").value;
+      var b = document.getElementById("WellLocation").value;
+      var c = document.getElementById("Blankbox").value;
+      var d = document.getElementById("CaseNo").value;
+      var e = document.getElementById("LeaseNo").value;
+      var f = document.getElementById("CaseDate").value;
+      var g = document.getElementById("BlockCode").value;
+      var h = document.getElementById("Blankbox1").value;
+      var i = document.getElementById("LandUsage").value;
+      var j = document.getElementById("CaseStatus").value;
+      var k = document.getElementById("preparedBy").value;
+      var l = document.getElementById("Remarks").value;
+      var m = document.getElementById("CheckedBy").value;
+      var n = document.getElementById("Remarks").value;
+      var o = document.getElementById("ReviewedBy").value;
+      var p = document.getElementById("Blankbox2").value;
+      var q = document.getElementById("VerifiedBy").value;
+      var r = document.getElementById("Blankbox3").value;
+      var s = document.getElementById("CheckedInKhi").value;
+      var t = document.getElementById("Blankbox4").value;
+      var u = document.getElementById("ApprovedBy").value;
+      var v = document.getElementById("Blankbox5").value;
+      var w = document.getElementById("LeaseRemarks").value;
+      var x = document.getElementById("CropRemarks").value;
+      var y = document.getElementById("TreeRemarks").value;
+      var z = document.getElementById("MiscRemarks").value;
+      var ab = document.getElementById("CaseDate1").value;
+      var bc = document.getElementById("Blankbox6").value;
+      var cd = document.getElementById("Blankbox7").value;
+      var de = document.getElementById("Blankbox").value;
+      
+      
     
-    function submitButton(){
-      let constructObject = {}
-      const onlyInputs = document.querySelectorAll('#frm1 input');
-        onlyInputs.forEach((param,index) => {
+      //  var karachiApproval = 'off';
+    //   if (document.getElementById('karachiApproval').checked) {
+    //     karachiApproval = document.getElementById('karachiApproval').value;
+    //     console.log("Value", karachiApproval);
+    //   }
+    //   var fg = document.getElementById("kaNo").value;
+     var radVal = document.form.karachiApproval.value;
+     console.log("karachiApproval", radVal);
+     var radVal1 = document.form.FieldApproval.value;
+     console.log("FieldApproval", radVal1);
 
 
-        constructObject[arr[index]] = param.value
-        
-});
+      console.log("Input Data: " + a +" " + b +" " + c +" " + d +" " + e+" " + f+" " + g+" " + h+" " + i+" " + j+" " + k+" " + l+" " + m+" " + n+" " + o+" " + p+" " + q+" " + r+" " + s+" " + t+" " + u+" " + v+" " + w+" " + x+" " + y+" " + z+" " + ab+" " + bc+" " + cd+" " + de);
 
-formArray.push(constructObject)
-console.log(formArray)
-      //  onlyInputs.forEach(input => {
-        
-      //         // console.log(param.element)
-      //         console.log(input.value);
-      //       });
+      fetch('https://jsonplaceholder.typicode.com/posts', {
+          method: 'POST',
+          body: JSON.stringify({
+         
+            BusinessName: a,
+            WellLocation:b,
+            BlankBox:c,
+            CaseNo:d,
+            LeaseNo:e,
+            CaseDate:f,
+            BlockCode:g,
+            Blankbox1:h,
+            LandUsage:i,
+            CaseStatus:j,
+            preparedBy:k,
+            Remarks:l,
+            CheckedBy:m,
+            Remarks:n,
+            ReviewedBy:o,
+            Blankbox2:p,
+            VerifiedBy:q,
+            Blankbox3:r,
+            CheckedInKhi:s,
+            Blankbox4:t,
+            ApprovedBy:u,
+            Blankbox5:v,
+            LeaseRemarks:w,
+            CropRemarks:x,
+            TreeRemarks:y,
+            MiscRemarks:z,
+            CaseDate1:ab,
+            Blankbox6:bc,
+            Blankbox7:cd,
+            Blankbox7:de,
+            radVal,
+            radVal1
 
 
-     var d= new window.Date()
-     var yr=d.getFullYear();
-     var month=d.getMonth()+1
 
-     console.log("month", month)
 
-     if(month<10){
-      month='0' +month
-     }
-    var date=d.getDate();
-    if(date<10){
-      date='0' +date
 
+
+          }),
+          headers: {
+            "Content-type": "application/json; charset=UTF-8"
+          }
+        })
+        .then(response => response.json())
+        .then(json => {
+          console.log('response: ' + JSON.stringify(json));
+        })
     }
-   var c_date=yr+"_"+month+"_"+date;
 
-
-
-
-
-     
-// 2      const onlyInputs = document.querySelectorAll('#frm1 input[type="text"]');
-
-//  2                onlyInputs.forEach(input => {
-//2                 console.log(input);
-// });2
-
-
-
-
-       var hidepass = document.getElementById("form_values");
-       console.log(hidepass.style.display);
-       for (let i = 0; i < hidepass.length ;i++) {
-         if(hidepass.style.display == "block"){
-           hidepass.style = "display:none"
-        }
-        else
-         {
-         hidepass.style = "display:block"
-         }
-         return false
-       }
-    }
     </script>
 </body>
 </html>
