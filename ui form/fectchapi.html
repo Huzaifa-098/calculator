@@ -133,7 +133,7 @@
        </div>
 
 
-   <form id="form" method="post" >
+   <form id="form" method="post" name="form">
      <div class="card">
       <h2>Compensation Case</h2>
   
@@ -202,18 +202,19 @@
         <div class="Blankbox" style="border:1px solid"><input class="add_input" id="Blankbox3"></div>
       </div>
          <div class="col-sm-3">       
-  <form>
+
     <label class="form-check-label" for="defaultCheck1">KARACHI APPROVAL</label>
-         <label class="radio-inline"> <input type="radio" name="optradio">yes</label>
-   <label class="radio-inline"><input type="radio" name="optradio">No</label>
-    </form>
+         <label class="radio-inline">yes</label>
+         <input type="radio" name="karachiApproval" id1="karachiApproval" value="yes" class="add_input" id="Approval">
+         <label class="radio-inline">No</label>
+         <input type="radio" name="karachiApproval" id1="karachiApproval" value="no" class="add_input" id="KarachiApproval">
     </div>
-    <div class="col-sm-3">       
-      <form>
+    <div class="col-sm-3">    
         <label class="form-check-label" for="defaultCheck1">FIELD APPROVAL</label>
-             <label class="radio-inline"> <input type="radio" name="optradio">yes</label>
-       <label class="radio-inline"><input type="radio" name="optradio">No</label>
-        </form>
+             <label class="radio-inline">yes</label>
+             <input type="radio" name="FieldApproval" id1="FieldApproval" value="yes" class="add_input" id="Approval">
+       <label class="radio-inline">No</label>
+       <input type="radio" name="FieldApproval" id1="FieldApproval" value="no" class="add_input" id="KarachiApproval">
         </div> 
   </div>
   <div class="row">
@@ -585,7 +586,19 @@ margin-top: 2px;
       var bc = document.getElementById("Blankbox6").value;
       var cd = document.getElementById("Blankbox7").value;
       var de = document.getElementById("Blankbox").value;
+      
+      
     
+      //  var karachiApproval = 'off';
+    //   if (document.getElementById('karachiApproval').checked) {
+    //     karachiApproval = document.getElementById('karachiApproval').value;
+    //     console.log("Value", karachiApproval);
+    //   }
+    //   var fg = document.getElementById("kaNo").value;
+     var radVal = document.form.karachiApproval.value;
+     console.log("karachiApproval", radVal);
+     var radVal1 = document.form.FieldApproval.value;
+     console.log("FieldApproval", radVal1);
 
 
       console.log("Input Data: " + a +" " + b +" " + c +" " + d +" " + e+" " + f+" " + g+" " + h+" " + i+" " + j+" " + k+" " + l+" " + m+" " + n+" " + o+" " + p+" " + q+" " + r+" " + s+" " + t+" " + u+" " + v+" " + w+" " + x+" " + y+" " + z+" " + ab+" " + bc+" " + cd+" " + de);
@@ -623,8 +636,9 @@ margin-top: 2px;
             CaseDate1:ab,
             Blankbox6:bc,
             Blankbox7:cd,
-            Blankbox7:de
-
+            Blankbox7:de,
+            radVal,
+            radVal1
 
 
 
