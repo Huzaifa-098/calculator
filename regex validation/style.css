@@ -52,6 +52,22 @@ body {
   color: #130f40;
   margin: 5px 0 !important;
 }
+input:focus {
+  outline: none;
+}
+#fieldset {
+  color: black;
+  border-radius: 10px !important;
+  cursor: pointer;
+  border: 1px solid black;
+  border-radius: 10px;
+}
+legend {
+  padding: 0;
+
+  font-size: 1rem;
+  width: 52px;
+}
 
 .login_form button {
   margin: 45px 0 30px 0;

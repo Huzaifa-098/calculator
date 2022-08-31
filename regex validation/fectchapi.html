@@ -139,26 +139,47 @@
   
       <div class="col-sm-3">
         <br>
-        <fieldset style="border:1px solid;"><legend class="helloLeg1">Business unit name</legend><input class="add_input" id="BusinessName" /></fieldset>
-        <br></div>
+        
+       
+        <fieldset style="border: 1px solid">
+          <legend class="helloLeg0">Business unit name</legend>
+          <input class="add_input" name="BusinessName1" />
+        </fieldset>
+          <div style="display: none; color:red"  class="helloLeg11" id="show_error">Please Enter Your Data</div>
+      </div>
         <div class="row">
           <div class="col-sm-3">
-          <fieldset style="border:1px solid;"><legend class="helloLeg">Well location</legend><input class="add_input" id="WellLocation"/></fieldset>
+            
+          <fieldset style="border:1px solid;">
+            <legend class="helloLeg">Well location</legend>
+            <input class="add_input" name="WellLocation1"/>
+          </fieldset>
+          <div style="display: none; color:red"  class="helloLeg11" id="WellLocation">Please Enter Your Data</div>
           </div>
           <br>
            <div class="col-sm-3">
-            <div class="Blankbox" style="border:1px solid"><input class="add_input" id="Blankbox"></div>
+            <div class="Blankbox" style="border:1px solid">
+              <input class="add_input" name="Blankbox1">
+              <div style="display: none; color:red"  class="helloLeg11" id="Blankbox">Please Enter Your Data</div>
+            </div>
          </div>
      <div class="col-sm-3">
-       <fieldset style="border:1px solid;"><legend class="helloLeg4">Case No</legend><input class="add_input" id="CaseNo"/></fieldset></div>
-      <div class="col-sm-3">
-    <fieldset style="border:1px solid;"><legend class="helloLeg5">Lease No</legend><input class="add_input" id="LeaseNo"/></fieldset></div>
+       <fieldset style="border:1px solid;"><legend class="helloLeg4">Case No</legend><input required class="add_input" id="CaseNo"/></fieldset>
+       <p  class=" " id="caseError" style="color: red "></p>
       </div>
+       
+      <div class="col-sm-3">
+    <fieldset style="border:1px solid;"><legend class="helloLeg5">Lease No</legend><input required class="add_input" id="LeaseNo"/></fieldset>
+    <p  class=" " id="leaseError" style="color: red "></p>
+  </div>
+  </div>
 
       <div class="row">
         <div class="col-sm-3">
-        <fieldset style="border:1px solid;"><legend class="helloLeg6">Case Date</legend><input  type="date" id1="d1" name="d1" class="add_input" id="CaseDate"/></fieldset>
-       </div>
+          <fieldset style="border:1px solid;"><legend class="helloLeg6">Case Date</legend><input required type="date" id1="d1" name="d1" class="add_input" id="CaseDate"/></fieldset>
+          <p  class=" " id="CaseError" style="color: red "></p>
+        </div>
+
        <div class="col-sm-3">
        <fieldset style="border:1px solid;"><legend class="helloLeg">Block Code</legend><input class="add_input" id="BlockCode" /></fieldset>
       </div>
@@ -448,8 +469,16 @@ a {
     font-size: 1rem;
     width: 139px;
     margin-left: 5px;
+  
 }
-
+.helloLeg0{
+  padding: 0;
+    font-size: 1rem;
+    width: 139px;
+    margin-left: 5px;
+  
+  
+}
 
 .helloLeg2{
   padding: 2px;
@@ -508,6 +537,9 @@ a {
    color: black;  
    margin-left: 5px !important;
  }
+ .helloLeg11{
+  display: none;
+ }
  .Blankbox{
   margin-top: 12px;
     padding: 12px;
@@ -537,6 +569,19 @@ a {
 
 }
 
+.login_form #password_error {
+  margin-top: 5px;
+  width: 345px;
+  font-size: 18px;
+  color: #c62828;
+  background: rgba(255, 0, 0, 0.1);
+  text-align: center;
+  padding: 5px 8px;
+  border-radius: 3px;
+  border: 1px solid #ef9a9a;
+  display: none;
+}
+
 
      
 
@@ -556,7 +601,30 @@ margin-top: 2px;
     function New(e) {
 	  e.preventDefault() 
       
-      var a = document.getElementById("BusinessName").value;
+    if (BusinessName1.value.length < 9) {
+    //  
+    show_error.style.display = "block";
+  }else{
+    show_error.style.display="none"
+  }
+  if (WellLocation1.value.length < 9) {
+    //  
+    WellLocation.style.display = "block";
+  }else{
+    WellLocation.style.display="none"
+  }
+
+  // if (Blankbox1.value.length < 9) {
+  //   //  
+  //   Blankbox.style.display = "block";
+  // }else{
+  //   Blankbox.style.display="none"
+  // }
+
+
+
+
+      var a = document.getElementById("show_error").value;
       var b = document.getElementById("WellLocation").value;
       var c = document.getElementById("Blankbox").value;
       var d = document.getElementById("CaseNo").value;
@@ -607,7 +675,7 @@ margin-top: 2px;
           method: 'POST',
           body: JSON.stringify({
          
-            BusinessName: a,
+            BusinessName1: a,
             WellLocation:b,
             BlankBox:c,
             CaseNo:d,
@@ -657,5 +725,6 @@ margin-top: 2px;
     }
 
     </script>
+    <script src="valid.js"></script>
 </body>
 </html>

@@ -18,19 +18,16 @@
         onsubmit="return validated()"
       >
         <br />
-        <div class="font">Email or Phone</div>
-        <input autocomplete="off" type="text" name="email" />
-        <div id="email_error">Please Enter Your data</div>
+
         <fieldset>
           <legend>
-            <div class="font font2">Password</div>
-            <input type="password" name="password" />
+            <div class="font font3">BusinessName</div>
+            <input type="text" name="BusinessName" />
+            <div style="display: none" id="BusinessUnitName">
+              Please Enter Data
+            </div>
           </legend>
-          <div id="password_error">Please Enter Your Password</div>
         </fieldset>
-        <div class="font font3">BusinessName</div>
-        <input type="text" name="BusinessName" />
-        <div style="display: none" id="show_error">Please Enter Data</div>
 
         <button class="submit" action="home.html">Login</button>
       </form>
